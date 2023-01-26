@@ -187,6 +187,18 @@ article {
   height: 20rem;
 }
 
+#project {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    justify-items: center;
+}
+
+#project-header {
+    grid-column: 2 / 5;
+
+}
+
 #contact {
     background-color: lightslategrey;
     height: 50vh;
