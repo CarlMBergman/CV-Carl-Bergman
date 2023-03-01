@@ -12,27 +12,29 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <nav>
-      <a href="#start">START</a>
-      <a href="#aboutMe">OM MIG</a>
-      <a href="#CV">CV</a>
-      <a href="#project">PROJEKT</a>
-      <a href="#contact">KONTAKTA MIG</a>
+    <nav class="nav">
+      <a href="#header" class="nav__link">START</a>
+      <a href="#aboutMe" class="nav__link">OM MIG</a>
+      <a href="#cv" class="nav__link">CV</a>
+      <a href="#project" class="nav__link">PROJEKT</a>
+      <a href="#contact" class="nav__link">KONTAKTA MIG</a>
     </nav>
-    <header id="start">
-      <aside id="introMe">
+    <header id="header" class="header">
+      <aside class="header__intro">
         <h1>Carl Bergman</h1>
-        <p id="introText">Blivande Frontend utvecklare som nu söker praktik!</p>
+        <p class="header__introtext">
+          Blivande Frontend utvecklare som nu söker praktik!
+        </p>
       </aside>
-      <aside id="imagesMe">
+      <aside id="header__image">
         <img src="img/Image[1343].jpeg" alt="imgCarl" />
       </aside>
     </header>
-    <section id="aboutMe">
-      <aside id="aboutMeImg">
+    <section id="aboutMe" class="aboutme">
+      <aside class="aboutme__img">
         <img src="img/carlbergman.png" alt="carlFishing" />
       </aside>
-      <aside id="aboutMeText">
+      <aside class="aboutme__text">
         <h2>VEM ÄR JAG?</h2>
         <p>
           Carl Martin Bergman heter jag! Jag är en 24 årig ex fiskare och
@@ -53,52 +55,53 @@
         </p>
       </aside>
     </section>
-    <section id="CV">
-      <aside id="CVHeader">
-        <h2>ARBETEN OCH UTBILDNINGAR</h2>
+    <section id="cv" class="cv">
+      <aside class="cv__header">
+        <h2 class="cv__header--text">ARBETEN OCH UTBILDNINGAR</h2>
       </aside>
-      <article id="jarnia">
+      <article class="cv__article cv__article--jarnia">
         <h3>2012-2015 Järnia</h3>
         <button data-id="jarnia">LÄS MER</button>
       </article>
-      <article id="op">
+      <article class="cv__article cv__article--op">
         <h3>2015-nu Öckerö-Pöjka fisk o skaldjur</h3>
         <button data-id="op">LÄS MER</button>
       </article>
-      <article id="sirius">
+      <article class="cv__article cv__article--sirius">
         <h3>Sommaren 2016 Sirius Shipping</h3>
         <button data-id="sirius">LÄS MER</button>
       </article>
-      <article id="brp">
+      <article class="cv__article cv__article--brp">
         <h3>Sommaren 2017 BRP Rederi</h3>
         <button data-id="brp">LÄS MER</button>
       </article>
-      <article id="polar">
+      <article class="cv__article cv__article--polar">
         <h3>2019-2020 Polar Pelagic</h3>
         <button data-id="polar">LÄS MER</button>
       </article>
-      <article id="bristol">
+      <article class="cv__article cv__article--bristol">
         <h3>2020-2022 Bristol fiskeri AB</h3>
         <button data-id="bristol">LÄS MER</button>
       </article>
-      <article id="ltg">
+      <article class="cv__article cv__article--ltg">
         <h3>2015-2018 Lindholmens Tekniska Gymnasium</h3>
         <button data-id="ltg">LÄS MER</button>
       </article>
-      <article id="jyh">
+      <article class="cv__article cv__article--jyh">
         <h3>2022-nu Jensen Yrkeshögskola</h3>
         <button data-id="jyh">LÄS MER</button>
       </article>
     </section>
-    <section id="project">
-      <h2 class="project-header">PROJEKT</h2>
-      <article class="project-art">
-        <img class="project-img" src="img/hangmansite.png" alt="hangmansite" />
+    <section id="project" class="project">
+      <h2 class="project__header">PROJEKT</h2>
+      <article class="project__art">
+        <img class="project__img" src="img/hangmansite.png" alt="hangmansite" />
         <h3>Hänga-gubbe</h3>
         <p>Ett gruppprojekt som vi gjorde under grundläggande js.</p>
         <aside>
           <button>
             <a
+              class="nav__link"
               href="https://frolicking-cannoli-f04140.netlify.app"
               target="_blank"
               >Till projektet</a
@@ -106,6 +109,7 @@
           </button>
           <button>
             <a
+              class="nav__link"
               href="https://github.com/Lellisinthewoods/Hangman-project"
               target="_blank"
               >Till GitHub Repo</a
@@ -113,8 +117,8 @@
           </button>
         </aside>
       </article>
-      <article class="project-art">
-        <img class="project-img" src="img/solarissite.png" alt="solaris" />
+      <article class="project__art">
+        <img class="project__img" src="img/solarissite.png" alt="solaris" />
         <h3>Solsystemet</h3>
         <p>
           Ett projekt jag gjorde i grundläggande js kursen, tyvärr är API:et vi
@@ -122,12 +126,16 @@
         </p>
         <aside>
           <button>
-            <a href="https://legendary-bunny-32f6cd.netlify.app" target="_blank"
+            <a
+              class="nav__link"
+              href="https://legendary-bunny-32f6cd.netlify.app"
+              target="_blank"
               >Till projektet</a
             >
           </button>
           <button>
             <a
+              class="nav__link"
               href="https://github.com/CarlMBergman/slutexamination"
               target="_blank"
               >Till GitHub Repo</a
@@ -135,8 +143,8 @@
           </button>
         </aside>
       </article>
-      <article class="project-art">
-        <img class="project-img" src="img/rhpsite.png" alt="RealHP" />
+      <article class="project__art">
+        <img class="project__img" src="img/rhpsite.png" alt="RealHP" />
         <h3>Real HP</h3>
         <p>
           Denna sidan byggde jag i våran första kurs. Kul första projekt men
@@ -145,6 +153,7 @@
         <aside>
           <button>
             <a
+              class="nav__link"
               href="https://stupendous-capybara-7250ac.netlify.app"
               target="_blank"
               >Till projektet</a
@@ -152,6 +161,7 @@
           </button>
           <button>
             <a
+              class="nav__link"
               href="https://github.com/CarlMBergman/RHP-huvudprojektet"
               target="_blank"
               >Till GitHub Repo</a
@@ -159,8 +169,8 @@
           </button>
         </aside>
       </article>
-      <article class="project-art">
-        <img class="project-img" src="img/devedesite.png" alt="moviehub" />
+      <article class="project__art">
+        <img class="project__img" src="img/devedesite.png" alt="moviehub" />
         <h3>DEVEDE MovieHub</h3>
         <p>
           En sida där jag kan spara mina favorit filmer i firebase. Denna sidan
@@ -169,13 +179,17 @@
         <aside>
           <button>
             <a
+              class="nav__link"
               href="https://fascinating-macaron-27c1ae.netlify.app"
               target="_blank"
               >Till projektet</a
             >
           </button>
           <button>
-            <a href="https://github.com/CarlMBergman/slutexWK" target="_blank"
+            <a
+              class="nav__link"
+              href="https://github.com/CarlMBergman/slutexWK"
+              target="_blank"
               >Till GitHub Repo</a
             >
           </button>

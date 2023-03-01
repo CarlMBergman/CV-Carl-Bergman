@@ -1,7 +1,7 @@
 import { addClickCV } from "../script.js"
 
 
-const cvSection = document.querySelector('#CV')
+const cvSection = document.querySelector('#cv')
 
 function displayWork(work) {
     const elem = `
